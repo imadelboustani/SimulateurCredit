@@ -192,12 +192,6 @@ public class Simulateur implements SimulateurCalcul {
 	double[] tmp = calculCapitalTraiteAvecAssurance(mtCredit, periode, tauxTva, tauxDeg,0);
 		return new double[] {tmp[0], tmp[1]};
 	}
-	@Override
-	public double calculEcartMensualite(double mtCredit, int periode, double mensualite, double taux, double tauxTva) {
-		// TODO Auto-generated method stub
-		  double[] mensualite1 = calculCapitalTraite(mtCredit, periode, tauxTva, taux);
-		    return mensualite1[1] -mensualite;
-	}
 	
 	
 	
